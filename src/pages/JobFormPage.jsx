@@ -60,7 +60,7 @@ export default function JobFormPage() {
 
       <Card title={jobId ? 'Vacature bewerken' : 'Nieuwe vacature'}>
         <JobForm
-          initialData={job}
+          initialData={job || {}}
           onSubmit={handleSubmit}
           onCancel={() => navigate('/jobs')}
         />
